@@ -18,6 +18,8 @@
 Generation)** 구조가 된다 — 과거 이력이라는 지식 베이스를 검색해서, 그 결과를
 LLM이 실제로 참고하도록 만드는 것.
 
+![RAG 파이프라인 구조](docs/images/architecture.png)
+
 ## 데이터에 대해
 
 `data/sample_notes.py`의 환자 메모는 전부 **가상의 예시 데이터**다.
@@ -86,6 +88,8 @@ GEMINI_MODEL=               # 선택, 비우면 gemini-3.8-flash
 
 규칙 적용 후 위 오류는 사라졌지만(1회 확인), 프롬프트만으로는 보장되지 않으므로
 원장 검수 단계가 필수다.
+
+![환각 개선 전후 비교](docs/images/hallucination_before_after.png)
 
 ## 임베딩에 대한 참고
 
